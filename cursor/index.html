@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人展览</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <header>
+        <nav>
+            <div class="school-name">南京市高新区中学</div>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="切换主题">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>个人展览</h1>
+                <p class="subtitle">九年级七班 张鑫</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <div class="about-container">
+                <div class="profile">
+                    <img src="imgs/21.webp" alt="个人照片" class="avatar">
+                    <p>作者很懒什么也没留下.......</p>
+                </div>
+                <div class="skills">
+                    <h3>技能专长</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <span class="skill-name">游戏</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">想象力</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- 添加更多技能 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>我的项目</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="random-image-container">
+                        <img src="" alt="随机项目图片" class="random-image">
+                    </div>
+                    <h3>项目展示 1</h3>
+                    <p>这是一个展示项目，展示了独特的设计风格和创意理念...</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="random-image-container">
+                        <img src="" alt="随机项目图片" class="random-image">
+                    </div>
+                    <h3>项目展示 2</h3>
+                    <p>这是另一个精彩的项目，展示了不同的艺术风格...</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="random-image-container">
+                        <img src="" alt="随机项目图片" class="random-image">
+                    </div>
+                    <h3>项目展示 3</h3>
+                    <p>这个项目展示了独特的视觉效果和创新设计...</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="random-image-container">
+                        <img src="" alt="随机项目图片" class="random-image">
+                    </div>
+                    <h3>项目展示 4</h3>
+                    <p>这是一个充满创意的项目，展示了独特的艺术风格...</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Email: your.email@example.com</p>
+                    <p><i class="fab fa-github"></i> GitHub: your-github-username</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">消息</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">发送消息</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 所有产权归作者所有</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <button id="backToTop" class="back-to-top" aria-label="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+</body>
+</html> 
